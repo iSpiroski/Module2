@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Resume</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+      }
+      .wrapper-flex-component {
+        display: inline-flex;
+        width: 100%;
+      }
+      .testing-border {
+        border: solid red 1px;
+      }
+      .testing-border-variant {
+        border: solid green 1px;
+      }
+      .main-container {
+        display: flex;
+        flex-direction: row;
+    
+      }
+      .left-header-content {
+        width: 70%;
+        background-color: cyan;
+      }
+      .right-header-content {
+        width: 30%;
+        background-color: pink;
+      }
+      .right-header-content p {
+        text-align: center;
+      }
+        .left-side-content {
+          background-color: lightblue;
+          display: flex;
+          flex: 1;
+
+        }
+        .right-side-content {
+          background-color: lightgreen;
+          display: flex;
+          flex-direction: column;
+          flex: 2;
+        }
+          .history-content {
+            background-color: lightyellow;
+            height: 70%;
+          
+        }
+        .personal-content {
+          background-color: lightcoral;
+            height: 30%;
+        }
+        @media screen and (max-width: 950px){
+            .main-container {
+              flex-direction: column;
+            }
+            .left-header-content {
+
+          display: flex;
+            width: 100%;
+            height: 30%;
+            }
+            .right-side-content {
+             width: 100%;
+             height: 70%;
+            }
+        }
+    </style>
+  </head>
+
+  <body>
+    <header class="testing-border">
+      <div class="wrapper-flex-component">
+        <div class="left-header-content testing-border-variant">
+          <p>My Resume</p>
+        </div>
+        <div class="right-header-content testing-border-variant">
+          <p>Ilija Spiroski</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-container">
+      <section class="left-side-content testing-border-variant">
+        <h1>More Information</h1>
+
+      </section>
+      <section class="right-side-content">
+        <h1 class="history-content">Work History</h1>
+
+        <section class="personal-content testing-border-variant">
+          <h1">Always positive and happy to learn</h1>
+
+        </section>
+      </section>
+    </main>
+
+    <footer class="testing-border">
+      <p>Footer</p>
+    </footer>
+  </body>
+</html>

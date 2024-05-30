@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is a sample website for learning HTML.">
+        <meta name="keywords" content="HTML, CSS, JavaScript, Learning">
+        <meta name="author" content="Your Name">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>My HTML Learning Journey</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="form.html">Form</a>
+        </nav>
+        
+        <article>
+            <h2>Learning elements - div, span, p, pre, ul, li, ol, article</h2>
+            
+            <div>HTML</div>
+            <div>CSS</div>
+            <div>JavaScript</div>
+    
+            <span>Span 1</span>
+            <span>Span 2</span>
+            <span>Span 3</span>
+    
+            <p>
+                p represents paragraph     without preserving      spacing
+            </p>
+            <pre>
+                Text in         a pre element
+                is displayed in a fixed-width
+                font, and it preserves
+                both      spaces and
+                line breaks
+            </pre>
+    
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+            </ul>
+    
+            <ol>
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item
+                    <ul>
+                        <li>Nested item 1</li>
+                        <li>Nested item 2</li>
+                    </ul>
+                </li>
+            </ol>
+        </article>
+
+        <article>
+            <h2>Learning HTML Tables</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">First header</th>
+                        <th>Third header</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>First cell - first row</td>
+                        <td>Second cell - first row</td>
+                        <td>Third cell - first row</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">First cell - second row</td>
+                        <td>Second cell - second row</td>
+                        <td>Third cell - second row</td>
+                    </tr>
+                    <tr>
+                        <td>Second cell - third row</td>
+                        <td>Third cell - third row</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+    
+        <style>
+            table, th, td {
+                border: 1px solid black;
+            }
+        </style>
+
+<article>
+    <h2>Embedding Media</h2>
+    <img src="https://picsum.photos/400/400" alt="Random Image" width="200" height="200">
+    <img src="/assets/html_lab_image.jpg" alt="Lab Image" width="200" height="200">
+
+    <video controls width="250">
+        <source src="/assets/flower.webm" type="video/webm">
+        Sorry, your browser doesn't support embedded videos.
+    </video>
+
+    <figure>
+        <audio controls src="/assets/t-rex-roar.mp3">
+            Your browser does not support the <code>audio</code> element.
+        </audio>
+        <figcaption>Audio of a T-Rex roar</figcaption>
+    </figure>
+</article>
+    </body>
+</html>

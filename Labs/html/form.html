@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+  <body>
+    <h1>Form Page</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="form.html">Form</a>
+    </nav>
+
+    <form method="POST" action="http://127.0.0.1:5500/form.html">
+        <div>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName">
+        </div>
+        <div>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName">
+        </div>
+
+        <div>
+            <label>Favourite Coding Language:</label>
+            <div>
+                <input type="radio" id="html" name="codingLanguage" value="HTML">
+                <label for="html">HTML</label>
+            </div>
+            <div>
+                <input type="radio" id="css" name="codingLanguage" value="CSS">
+                <label for="css">CSS</label>
+            </div>
+            <div>
+                <input type="radio" id="js" name="codingLanguage" value="JavaScript">
+                <label for="js">JavaScript</label>
+            </div>
+        </div>
+
+        <div>
+            <label>Types of Vehicles Owned:</label>
+            <div>
+                <input type="checkbox" id="car" name="vehicle" value="Car">
+                <label for="car">Car</label>
+            </div>
+            <div>
+                <input type="checkbox" id="bike" name="vehicle" value="Bike">
+                <label for="boat">Boat</label>
+            </div>
+            <div>
+                <input type="checkbox" id="boat" name="vehicle" value="Boat">
+                <label for="bike">Bike</label>
+            </div>
+        </div>
+
+        <div>
+            <label for="carBrand">Car Brand:</label>
+            <select id="carBrand" name="carBrand">
+                <option value="Mazda">Mazda</option>
+                <option value="Fiat">Fiat</option>
+                <option value="Toyota">Toyota</option>
+            </select>
+        </div>
+
+        <button type="submit">Submit form</button>
+    </form>
+
+</body>
+</html>
